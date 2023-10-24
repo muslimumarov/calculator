@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+html {
+  height: 100%;
+}
+img {
+  display: block;
+}
+body {
+  margin: 0;
+  font-family: "", "Arial", sans-serif;
+  font-weight: 700;
+  background-image: url("");
+}
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+/* calculate start  */
+.calculate {
+  padding-top: 200px;
+  padding-bottom: 300px;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+}
+.box {
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 35px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+input {
+  background-color: transparent;
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #000;
+  font-size: 21px;
+  color: rgb(164, 189, 187);
+}
+.text1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.num_1 {
+  margin-bottom: 30px;
+  display: block;
+  padding: 5px;
+}
+.num_2 {
+  margin-bottom: 35px;
+}
+.btn_box {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  background-color: #6eef0c;
+  border: none;
+  color: #000;
+  border-radius: 10px;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #2f8606;
+  transform: scale(0.8, 0.8)
+}
+button {
+  font-size: 14px;
+  width: 55px;
+  height: 25px;
+  background-color: #6eef0c;
+  border: none;
+  color: #000;
+  border-radius: 5px;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+/* calculate finished  */
