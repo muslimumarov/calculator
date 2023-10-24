@@ -5,11 +5,12 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./main.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <title>Document</title>
 </head>
 <body>
    <section class="calculate">
-     <div class="box">
+     <div data-aos="flip-left"  data-aos-delay="200" class="box">
        <h1 class="title">Calculator</h1>
       <label>
         <input type="number" class="num_1">
@@ -26,7 +27,7 @@
             <p class="text1">qiymat: <span class="text"></span> </p>
      </div>
    </section>
-
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="./index.js"></script>
 </body>
 </html>
