@@ -1,38 +1,36 @@
 AOS.init();
-let btns=document.querySelectorAll('.btn')
-for (let i=0; i <btns.length; i++) {
-  btns[i].addEventListener('click', (e)=>{
-    calculate(e)
+AOS.init();
+let btn = document.querySelectorAll('.btn')
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener('click', (e)=> {
+    calculator(e)
   })
 }
-const calculate=(e)=>{
+const calculator=(e)=>{
   var type=e.target.innerHTML
-  let num_1 = document.querySelector(".num_1");
-  let num_2 = document.querySelector(".num_2");
-  let r = document.querySelector('.text')
-  num_1 = check(num_1);
-  num_2 = check(num_2);
-  if (num_1!=null && num_2!=null) {
-    let res =0;
-    switch(type){
-      case '+':res = num_1+num_2; break;
-      case '-':res = num_1-num_2; break;
-      case '*':res = num_1*num_2; break;
-      case '/':res = num_1/num_2; break;
+  var num_1 = document.querySelector('.num_1')
+  var num_2 = document.querySelector('.num_2')
+  num_1 =chec(num_1)
+  num_2 =chec(num_2)
+  if(num_1 !=null && num_2 !=null) {
+    res = 0
+    switch(type) {
+      case'+': res = num_1+num_2; break;
+      case'-': res = num_1-num_2; break;
+      case'*': res = num_1*num_2; break;
+      case'/': res = num_1/num_2; break;
     }
-   r.innerHTML=res.toFixed(2)
+    document.querySelector('.text').innerHTML = res.toFixed(2)
   }else {
-    r.innerHTML =''
-   }
-}
-const check=(a)=> {
-  if (a.value.length==0) {
-    a.style.borderColor="red"
-    return null;
-  }else {
-    a.style.borderColor="black"
-    return (Number(a.value));
+    res.innerHTML =''
   }
-
-
+}
+const chec=(a)=>{
+  if (a.value.length==0) {
+    a.style.borderColor= 'red'
+    return(null);
+  }else {
+    a.style.borderColor= 'black'
+    return(Number(a.value));
+  }
 }
