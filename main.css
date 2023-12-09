@@ -123,5 +123,7 @@ button {
   border-radius: 5px;
   transition: all 1s ease;
   cursor: pointer;
+} .vazifa {
+  color: #e0e004;
 }
 /* calculate finished  */
