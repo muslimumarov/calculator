@@ -39,11 +39,13 @@ body {
 }
 .box {
   background-image: url(./images/photo_2023-11-26_02-58-29.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-right: 25px;
   padding-left: 25px;
   padding-top: 70px;
   padding-bottom: 40px;
-  max-width: 300px;
+  max-width: 350px;
   width: 100%;
   margin: 0 auto;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -52,6 +54,7 @@ body {
 }
 .title {
   color: #e41010;
+  font-size: 30px;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 35px;
@@ -98,7 +101,7 @@ input {
 }
 .btn {
   color: #e41010;
-  font-size: 24px;
+  font-size: 34px;
   width: 50px;
   height: 50px;
   outline: none;
@@ -124,6 +127,7 @@ button {
   transition: all 1s ease;
   cursor: pointer;
 } .vazifa {
-  color: #e0e004;
+  color: #e00404;
+  font-size: 30px;
 }
 /* calculate finished  */
